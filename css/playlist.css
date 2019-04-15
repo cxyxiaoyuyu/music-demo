@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 30px 15px;
+    position: relative;
+}
+.intro::after {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://music.163.com/api/img/blur/109951163921055149?param=170y170) no-repeat;
+    background-size: cover;
+    filter: blur(20px);
+    transform: scale(1.5);
+}
+.intro .img {
+    width: 126px;
+    height: 126px;
+}
+.intro .img img{
+    width: 100%;
+    height: 100%;
+}
+    width: 126px;
+.intro .name {
+    display: flex;
+    flex-directon: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.intro .name span{
+    font-size: 16px;
+    color:#fff;
+}
+.intro .name .author {
+    margin-top: 20px;
+    display: flex;
+}
+.intro .name .author img{
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    margin-right: 15px;
+}
+.intro .name .author span{
+    font-size: 15px;
+    color: #efe6e6;
+}
+
+.songList {
+    background: #ffffffed;
+}

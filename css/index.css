@@ -1,0 +1,162 @@
+.container {
+    background: #fcfcfd;
+    height: 100%;
+}
+/* tobBar */
+.topBar {
+    height: 64px;
+    border: 1px solid red;
+    background: #d43c33; 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.topBar-content {
+    padding: 0 10px;
+    border: 1px solid red;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* topBar logo*/
+.topBar-content .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.topBar-content .logo .icon {
+    font-size: 2.4em;
+    fill: #fff;
+}
+.topBar-content .logo span{
+    font-size: 18px;
+}
+
+/* topBar donwload app*/
+.topBar-content > .downloadApp {
+}
+.topBar-content > .downloadApp > span {
+    border: 1px solid #fff;
+    line-height: 30px;
+    font-size: 15px; 
+    height: 30px;
+    padding: 0 18px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/* music-container*/
+
+/* nav tabs */
+.navTab {
+    height: 40px;
+    position: fixed;
+    top: 64px;;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+}
+
+.navTab .tab-container {
+    align-items: center;
+    justify-content: center;
+}
+.navTab ul {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+.navTab ul li {
+    flex-grow: 1; 
+    text-align: center;
+    height: 100%;
+    line-height: 40px; 
+}
+.navTab ul li .text{
+    text-align: center;
+    font-size: 15px;
+    height: 100%;
+    display: inline-block;
+}
+.navTab ul li.active .text{
+    border-bottom: 2px solid red;
+}
+.navTab ul li .text span{
+    padding: 0 5px;
+}
+.navTab ul li.active .text span{
+    color: red;
+}
+
+/* tabs */
+.tabItem {
+    margin-top: 122px;
+}
+.tabItem > .tab{
+    display: none;
+}
+.tabItem > .tab.active{
+    display: block;
+}
+
+
+/* tab-1 */
+.tabTitle {
+    border-left: 2px solid #D43C33;
+    font-size: 19px;
+    line-height: 1;
+    padding-left: 8px;
+    margin: 12px 0 8px;
+    font-weight: normal;
+}
+.tab-1 .songSheetList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tab-1 .songSheetList .songSheet{
+    width: 32.8%; 
+    margin: 8px 0;
+}
+.tab-1 .songSheetList .songSheet .img img{
+    width: 100%;
+}
+.tab-1 .songSheetList .songSheet .img p{
+    padding-left: 5px;
+}
+.tab-1 .newSongs .songList{
+    margin-top: 18px;
+}
+.tab-1 .newSongs .songList .song {
+    margin-left: 10px;
+    position: relative;
+    padding: 3px 0;
+    border-bottom: 1px solid #ddd;
+}
+.tab-1 .newSongs .songList .song h3{
+    font-size: 19px;
+    color: #161414;
+    font-weight: normal;
+}
+.tab-1 .newSongs .songList .song .singer{
+    color: #554d4d;
+    font-size: 15px;
+}
+.tab-1 .newSongs .songList .song .playButton {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+.tab-1 .newSongs .songList .song .playButton svg{
+    fill: #aaa;
+    width: 22px;
+    height: 22px;
+}
+
+
