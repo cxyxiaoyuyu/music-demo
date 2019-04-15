@@ -8,11 +8,12 @@
 
         `,
         render(data){
-            this.$el.find('audio').attr('src',data.url)
-            this.$el.find('.songImg').attr('src',data.img)
-            this.$el.find('.cover').css('background-image',`url('${data.img}')`)
-            this.$el.find('.songName').text(data.name)
+            this.$el.find('audio').attr('src','./audio/laojie.mp3')
+            this.$el.find('.songImg').attr('src',`./img/xiaochou.jpg`)
+            this.$el.find('.cover').css('background-image',`url('./img/xiaochou.jpg')`)
+            this.$el.find('.songName').text(`李荣浩-老街.mp3`)
             let lyrics = data.lyrics.split('\n')
+            console.log(lyrics)
             lyrics.map((value)=>{
                 let reg = /\[([\d:.]+)\](.+)/
                 let matches =  value.match(reg)
@@ -55,7 +56,7 @@
         data: {id:'',url:'',name:'',singer:''},
         get(id){
             let query = new AV.Query('song');
-            return query.get(id).then((song)=>{
+            return query.get('5c8e10bafe88c200658a6c91').then((song)=>{
                 this.data = {id,...song.attributes}
             })
         }
@@ -95,6 +96,7 @@
             let query = search.split('&').filter(v=>v)
             let id = query[0].split('=')[1]
             this.model.get(id).then(()=>{
+                console.log(this.model.data)
                 this.view.render(this.model.data)
             })
         }
