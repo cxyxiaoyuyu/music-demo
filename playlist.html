@@ -1,42 +1,244 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
-        <title>My music</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/playlist.css">
-        <script src="./js/av-min.js"></script>
-        <script src="./js/jquery.min.js"></script>
-        <script src="//at.alicdn.com/t/font_1091968_1e6ehqkfrmlh.js"></script>
-        <script src='./js/initializers/av.js'></script>
-        <script src='./js/event-hub.js'></script>
-    </head>
-    <body>
-        <div class="container" id="app">
-            <div class="intro">
-                <div class="img">
-                    <img src="http://p1.music.126.net/7iw_ypWZnet78k7_XRjaHw==/109951163086031971.webp?imageView&thumbnail=60x0&quality=75&tostatic=0&type=webp">
-                </div>
-                <div class="name">
-                    <span>缓缓的声音,流进心里的枯井</span>
-                    <div class="author">
-                        <img src="http://p1.music.126.net/7iw_ypWZnet78k7_XRjaHw==/109951163086031971.webp?imageView&thumbnail=60x0&quality=75&tostatic=0&type=webp">
-                        <span>Lashara</span>
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>My music</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <script src="./js/av-min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="//at.alicdn.com/t/font_1091968_1e6ehqkfrmlh.js"></script>
+    <script src='./js/initializers/av.js'></script>
+    <script src='./js/event-hub.js'></script>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="intro">
+            <div class="img">
+                <img src="http://p2.music.126.net/dSHVlnVw2NsGmnram7L8jA==/109951163926613994.jpg?param=140y140">
             </div>
-            <div class="songList">
-                <div class="tag">
-                    <h2>标签:</h2>
-                    <ol>
-                        <li>散步</li>
-                        <li>感动</li>
-                        <li>华语</li>
-                    </ol>
+            <div class="name">
+                <span>缓缓的声音,流进心里的枯井</span>
+                <div class="author">
+                    <img src="http://p1.music.126.net/7iw_ypWZnet78k7_XRjaHw==/109951163086031971.webp?imageView&thumbnail=60x0&quality=75&tostatic=0&type=webp">
+                    <span>Lashara</span>
                 </div>
             </div>
         </div>
-        <script src='./js/play/playlist.js'></script>
-    </body>
+        <div class="songList">
+            <div class="tag">
+                <h3>标签:</h3>
+                <ol>
+                    <li>散步</li>
+                    <li>感动</li>
+                    <li>华语</li>
+                </ol>
+            </div>
+            <div class="songs">
+                
+            </div><div class="newSongs">
+                <h2 class="tabTitle">歌曲列表</h2> 
+                <ol class="songList" id="songList">
+                    
+                    <li class="song">
+                        <h3>摩天大楼.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">薛之谦</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8be653fe88c2006f82cea7">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>大鱼.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">双笙</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8db01afe88c2006582a4f8">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>肆无忌惮.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">薛之谦</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8db02f8d6d810070e3d30e">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>天份.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">薛之谦</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8db095fe88c2007098f624">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>那是你离开了北京的生活.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">薛之谦</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8db0aaba39c8007007c1ac">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>老街.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">李荣浩</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e10bafe88c200658a6c91">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>出卖.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">李荣浩</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e10c8fe88c200658a6d7d">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>小丑.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">朱星杰</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e417812215f0072bf937f">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>你的背包.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">陈奕迅</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e49428d6d810070eff3a9">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>纸短情长.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">花粥</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e496012215f0072c042c0">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>我想带你去美丽的春天.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">花粥</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e49a98d6d810070effc3a">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>飞云之下.mp3</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">林俊杰</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e49cb12215f0072c04c0e">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="song">
+                        <h3>月光</h3>
+                        <p>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-sq"></use>
+                            </svg>
+                            <span class="singer">胡彦斌</span>
+                        </p>
+                        <a class="playButton" href="./play-song.html?id=5c8e5f6bba39c8007015bcb6">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src='./js/play/playlist.js'></script>
+</body>
 </html>

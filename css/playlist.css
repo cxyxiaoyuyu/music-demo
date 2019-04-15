@@ -5,7 +5,7 @@
 .intro {
     display: flex;
     justify-content: space-between;
-    padding: 30px 10px 30px 15px;
+    padding: 30px 20px 30px 15px;
     position: relative;
 }
 .intro::after {
@@ -30,32 +30,80 @@
     width: 100%;
     height: 100%;
 }
-    width: 126px;
 .intro .name {
     display: flex;
-    flex-directon: column;
-    margin-top: 20px;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
 }
 .intro .name span{
-    font-size: 16px;
+    font-size: 18px;
     color:#fff;
 }
 .intro .name .author {
     margin-top: 20px;
     display: flex;
+    align-items: center;
 }
 .intro .name .author img{
     border-radius: 50%;
-    width: 30px; 
-    height: 30px;
-    margin-right: 15px;
+    width: 36px; 
+    height: 36px;
 }
 .intro .name .author span{
     font-size: 15px;
     color: #efe6e6;
 }
-
 .songList {
     background: #ffffffed;
+}
+.songList .tag {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.songList .tag h3{
+    width: 20%;
+    padding-left: 10px;
+}
+.songList .tag ol{
+    padding-right: 50px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.songList{
+    margin-top: 8px;
+}
+.song {
+    margin-left: 10px;
+    position: relative;
+    padding: 3px 0;
+    border-bottom: 1px solid #ddd;
+}
+.song h3{
+    font-size: 19px;
+    color: #161414;
+    font-weight: normal;
+}
+.song .singer{
+    color: #554d4d;
+    font-size: 15px;
+}
+.song .playButton {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+.song .playButton svg{
+    fill: #aaa;
+    width: 22px;
+    height: 22px;
+}
+.newSongs .tabTitle {
+    background: #ddd;
+    font-size: 16px;
+    color: #484646;
+    padding: 3px 10px;
 }
